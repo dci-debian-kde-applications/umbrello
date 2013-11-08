@@ -1,3 +1,9 @@
+umbrello (4:4.11.3-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 08 Nov 2013 18:37:44 +0100
+
 umbrello (4:4.11.2-1) experimental; urgency=low
 
   * First release of kdesdk after being split by upstream.
