@@ -1,9 +1,9 @@
-umbrello (4:4.11.3-1) UNRELEASED; urgency=low
+umbrello (4:4.11.3-1) unstable; urgency=low
 
   * New upstream release.
   * Update build dependencies.
 
- -- Maximiliano Curia <maxy@debian.org>  Fri, 08 Nov 2013 18:37:44 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 09 Nov 2013 14:26:37 +0100
 
 umbrello (4:4.11.2-1) experimental; urgency=low
 
