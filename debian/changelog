@@ -1,5 +1,7 @@
 umbrello (4:4.11.3-2) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Add the pkg-config build dependency.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Jan 2014 11:33:41 +0100
 
