@@ -5,6 +5,9 @@ umbrello (4:4.11.5-1) UNRELEASED; urgency=medium
   [ Pino Toscano ]
   * Add the pkg-config build dependency.
 
+  [ Maximiliano Curia ]
+  * Add autopkgtests.
+
  -- Maximiliano Curia <maxy@debian.org>  Tue, 04 Feb 2014 16:02:20 +0100
 
 umbrello (4:4.11.3-1) unstable; urgency=low
