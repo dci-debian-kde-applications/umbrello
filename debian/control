@@ -14,7 +14,7 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.11),
  libxslt1-dev,
  libxml2-dev,
  libboost-dev (>= 1.33.1)
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 XS-Testsuite: autopkgtest
 Homepage: http://www.kde.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/umbrello.git
