@@ -7,13 +7,15 @@ Uploaders: Sune Vuorela <sune@debian.org>,
            Modestas Vainius <modax@debian.org>,
            George Kiagiadakis <kiagiadakis.george@gmail.com>,
            Maximiliano Curia <maxy@debian.org>
-Build-Depends: kde-sc-dev-latest (>= 4:4.11),
- cmake (>= 2.8), debhelper (>= 9), pkg-kde-tools (>= 0.12),
- kdelibs5-dev (>= 4:4.11),
- pkg-config,
- libxslt1-dev,
- libxml2-dev,
- libboost-dev (>= 1.33.1)
+Build-Depends: cmake (>= 2.8),
+               debhelper (>= 9),
+               kde-sc-dev-latest (>= 4:4.11),
+               kdelibs5-dev (>= 4:4.11),
+               libboost-dev (>= 1.33.1),
+               libxml2-dev,
+               libxslt1-dev,
+               pkg-config,
+               pkg-kde-tools (>= 0.12)
 Standards-Version: 3.9.5
 XS-Testsuite: autopkgtest
 Homepage: http://www.kde.org/
@@ -23,7 +25,7 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/umbrello.git
 Package: umbrello
 Architecture: any
 Section: devel
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: khelpcenter4
 Description: UML modelling tool and code generator
  Umbrello UML Modeller is a Unified Modelling Language diagram editor for KDE.
