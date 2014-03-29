@@ -1,3 +1,9 @@
+umbrello (4:4.12.3-2) UNRELEASED; urgency=medium
+
+  * Wrong Upstream-Name in copyright file.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 29 Mar 2014 21:11:36 +0100
+
 umbrello (4:4.12.3-1) experimental; urgency=medium
 
   * New upstream release.
