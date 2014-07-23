@@ -1,0 +1,134 @@
+Index: umbrello/umbrello/widgets/classifierwidget.cpp
+===================================================================
+--- umbrello.orig/umbrello/widgets/classifierwidget.cpp	2014-07-23 16:42:50.804016844 +0200
++++ umbrello/umbrello/widgets/classifierwidget.cpp	2014-07-23 16:42:50.800017002 +0200
+@@ -43,25 +43,30 @@
+     m_pAssocWidget(0)
+ {
+     const Settings::OptionState& ops = m_scene->optionState();
+-    setVisualPropertyCmd(ShowVisibility, ops.classState.showVisibility);
+-    setVisualPropertyCmd(ShowOperations, ops.classState.showOps);
+-    setVisualPropertyCmd(ShowPublicOnly, ops.classState.showPublicOnly);
+-    setVisualPropertyCmd(ShowPackage,    ops.classState.showPackage);
+-    m_attributeSignature = Uml::SignatureType::ShowSig;
++    // valgrind issue:
++    // Conditional jump or move depends on uninitialised value(s)
++    // setVisualPropertyCmd(ShowVisibility, ops.classState.showVisibility);
++    // uses m_operationSignature
+     /*:TODO:
+     setVisualProperty(ShowOperationSignature, ops.classState.showOpSig);
+       Cannot do that because we get "pure virtual method called". Open code:
+      */
+     if(!ops.classState.showOpSig) {
+-        if (visualProperty(ShowVisibility))
++        if (ops.classState.showVisibility)
+             m_operationSignature = Uml::SignatureType::NoSig;
+         else
+             m_operationSignature = Uml::SignatureType::NoSigNoVis;
+ 
+-    } else if (visualProperty(ShowVisibility))
++    } else if (ops.classState.showVisibility)
+         m_operationSignature = Uml::SignatureType::ShowSig;
+     else
+         m_operationSignature = Uml::SignatureType::SigNoVis;
++    m_attributeSignature = Uml::SignatureType::ShowSig;
++
++    setVisualPropertyCmd(ShowVisibility, ops.classState.showVisibility);
++    setVisualPropertyCmd(ShowOperations, ops.classState.showOps);
++    setVisualPropertyCmd(ShowPublicOnly, ops.classState.showPublicOnly);
++    setVisualPropertyCmd(ShowPackage,    ops.classState.showPackage);
+ 
+     setVisualPropertyCmd(ShowAttributes, ops.classState.showAtts);
+     setVisualPropertyCmd(ShowStereotype, ops.classState.showStereoType);
+Index: umbrello/umbrello/clipboard/umlclipboard.cpp
+===================================================================
+--- umbrello.orig/umbrello/clipboard/umlclipboard.cpp	2014-07-23 16:42:50.804016844 +0200
++++ umbrello/umbrello/clipboard/umlclipboard.cpp	2014-07-23 18:25:28.035070059 +0200
+@@ -469,8 +469,15 @@
+     UMLScene *currentScene = UMLApp::app()->currentView()->umlScene();
+     if(diagramType != currentScene->type()) {
+         if(!checkPasteWidgets(widgets)) {
++            // valgrind error
+             while (!assocs.isEmpty()) {
+-                delete assocs.takeFirst();
++                AssociationWidget *assoc = assocs.takeFirst();
++                currentScene->removeAssocInViewAndDoc(assoc);
++            }
++            while (!widgets.isEmpty()) {
++                UMLWidget *widget = widgets.takeFirst();
++                currentScene->removeWidget(widget);
++                delete widget;
+             }
+             return false;
+         }
+@@ -702,17 +709,22 @@
+             {
+                 FloatingTextWidget *ft = static_cast<FloatingTextWidget*>(p);
+                 if (ft->textRole() != Uml::TextRole::Floating) {
+-                    widgetList.removeAll(p);
+-                    delete ft;
+-                    retval = false;
++                    // valgrind error
++                    // segfault after a failed paste and then try to select an
++                    // area
++                    // widgetList.removeAll(p);
++                    // delete ft;
++                    return false;
+                 }
+             }
+             break;
+ 
+         default:
+-            widgetList.removeAll(p);
+-            delete p;
+-            retval = false;
++            // valgrind error
++            // segfault after a failed paste and then try to select an area
++            // widgetList.removeAll(p);
++            // delete p;
++            return false;
+             break;
+         }
+     }
+Index: umbrello/umbrello/umlscene.cpp
+===================================================================
+--- umbrello.orig/umbrello/umlscene.cpp	2014-07-23 19:26:14.001327214 +0200
++++ umbrello/umbrello/umlscene.cpp	2014-07-23 19:26:39.080329543 +0200
+@@ -1221,8 +1221,8 @@
+     disconnect(this, SIGNAL(sigTextColorChanged(Uml::ID::Type)), o, SLOT(slotTextColorChanged(Uml::ID::Type)));
+     if (t == WidgetBase::wt_Message) {
+         m_MessageList.removeAll(static_cast<MessageWidget*>(o));
+-    } else
+-        m_WidgetList.removeAll(o);
++    }
++    m_WidgetList.removeAll(o);
+     o->deleteLater();
+     m_doc->setModified(true);
+ }
+Index: umbrello/umbrello/widgets/associationwidget.cpp
+===================================================================
+--- umbrello.orig/umbrello/widgets/associationwidget.cpp	2014-07-25 11:10:54.564606452 +0200
++++ umbrello/umbrello/widgets/associationwidget.cpp	2014-07-25 11:27:09.794306083 +0200
+@@ -1043,7 +1043,8 @@
+         ft->setLink(this);
+         ft->activate();
+         setTextPosition(role);
+-        m_scene->addFloatingTextWidget(ft);
++        // segfault on click after removing the assoc
++        // m_scene->addFloatingTextWidget(ft);
+     } else {
+         bool newLabel = ft->text().isEmpty();
+         ft->setText(text);
+@@ -4191,7 +4192,12 @@
+         }
+     }
+ 
++    // Wait till be have the complete object loaded to propagate
++    // signals and sync to model.
++    UMLAssociation *uml = association();
++    uml && uml->blockSignals(true);
+     setAssociationType(aType);
++    uml && uml->blockSignals(false);
+ 
+     QString indexa = qElement.attribute("indexa", "0");
+     QString indexb = qElement.attribute("indexb", "0");
