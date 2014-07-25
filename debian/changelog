@@ -1,9 +1,9 @@
-umbrello (4:4.13.3-1~) UNRELEASED; urgency=medium
+umbrello (4:4.13.3-1) unstable; urgency=medium
 
   * New upstream release.
   * New patch: valgrind_errors (Closes: #610504)
 
- -- Maximiliano Curia <maxy@debian.org>  Wed, 23 Jul 2014 13:52:11 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 25 Jul 2014 12:23:39 +0200
 
 umbrello (4:4.13.1-1) unstable; urgency=medium
 
