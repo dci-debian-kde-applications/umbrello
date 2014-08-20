@@ -1,9 +1,9 @@
 Index: umbrello/umbrello/widgets/classifierwidget.cpp
 ===================================================================
---- umbrello.orig/umbrello/widgets/classifierwidget.cpp	2014-07-23 16:42:50.804016844 +0200
-+++ umbrello/umbrello/widgets/classifierwidget.cpp	2014-07-23 16:42:50.800017002 +0200
-@@ -43,25 +43,30 @@
-     m_pAssocWidget(0)
+--- umbrello.orig/umbrello/widgets/classifierwidget.cpp	2014-08-20 15:27:31.364568737 +0200
++++ umbrello/umbrello/widgets/classifierwidget.cpp	2014-08-20 15:27:31.356569064 +0200
+@@ -46,25 +46,30 @@
+     m_pAssocWidget(0), m_pInterfaceName(0)
  {
      const Settings::OptionState& ops = m_scene->optionState();
 -    setVisualPropertyCmd(ShowVisibility, ops.classState.showVisibility);
@@ -42,9 +42,9 @@ Index: umbrello/umbrello/widgets/classifierwidget.cpp
      setVisualPropertyCmd(ShowStereotype, ops.classState.showStereoType);
 Index: umbrello/umbrello/clipboard/umlclipboard.cpp
 ===================================================================
---- umbrello.orig/umbrello/clipboard/umlclipboard.cpp	2014-07-23 16:42:50.804016844 +0200
-+++ umbrello/umbrello/clipboard/umlclipboard.cpp	2014-07-23 18:25:28.035070059 +0200
-@@ -469,8 +469,15 @@
+--- umbrello.orig/umbrello/clipboard/umlclipboard.cpp	2014-08-20 15:27:31.364568737 +0200
++++ umbrello/umbrello/clipboard/umlclipboard.cpp	2014-08-20 15:27:31.360568901 +0200
+@@ -475,8 +475,15 @@
      UMLScene *currentScene = UMLApp::app()->currentView()->umlScene();
      if(diagramType != currentScene->type()) {
          if(!checkPasteWidgets(widgets)) {
@@ -61,7 +61,7 @@ Index: umbrello/umbrello/clipboard/umlclipboard.cpp
              }
              return false;
          }
-@@ -702,17 +709,22 @@
+@@ -708,17 +715,22 @@
              {
                  FloatingTextWidget *ft = static_cast<FloatingTextWidget*>(p);
                  if (ft->textRole() != Uml::TextRole::Floating) {
@@ -92,24 +92,24 @@ Index: umbrello/umbrello/clipboard/umlclipboard.cpp
      }
 Index: umbrello/umbrello/umlscene.cpp
 ===================================================================
---- umbrello.orig/umbrello/umlscene.cpp	2014-07-23 19:26:14.001327214 +0200
-+++ umbrello/umbrello/umlscene.cpp	2014-07-23 19:26:39.080329543 +0200
-@@ -1221,8 +1221,8 @@
+--- umbrello.orig/umbrello/umlscene.cpp	2014-08-20 15:27:31.364568737 +0200
++++ umbrello/umbrello/umlscene.cpp	2014-08-20 15:29:39.495338534 +0200
+@@ -1244,9 +1244,8 @@
      disconnect(this, SIGNAL(sigTextColorChanged(Uml::ID::Type)), o, SLOT(slotTextColorChanged(Uml::ID::Type)));
      if (t == WidgetBase::wt_Message) {
          m_MessageList.removeAll(static_cast<MessageWidget*>(o));
--    } else
+-    } else {
 -        m_WidgetList.removeAll(o);
-+    }
+     }
 +    m_WidgetList.removeAll(o);
      o->deleteLater();
      m_doc->setModified(true);
  }
 Index: umbrello/umbrello/widgets/associationwidget.cpp
 ===================================================================
---- umbrello.orig/umbrello/widgets/associationwidget.cpp	2014-07-25 11:10:54.564606452 +0200
-+++ umbrello/umbrello/widgets/associationwidget.cpp	2014-07-25 11:27:09.794306083 +0200
-@@ -1043,7 +1043,8 @@
+--- umbrello.orig/umbrello/widgets/associationwidget.cpp	2014-08-20 15:27:31.364568737 +0200
++++ umbrello/umbrello/widgets/associationwidget.cpp	2014-08-20 15:27:31.364568737 +0200
+@@ -1061,7 +1061,8 @@
          ft->setLink(this);
          ft->activate();
          setTextPosition(role);
@@ -119,7 +119,7 @@ Index: umbrello/umbrello/widgets/associationwidget.cpp
      } else {
          bool newLabel = ft->text().isEmpty();
          ft->setText(text);
-@@ -4191,7 +4192,12 @@
+@@ -4254,7 +4255,12 @@
          }
      }
  
@@ -130,5 +130,5 @@ Index: umbrello/umbrello/widgets/associationwidget.cpp
      setAssociationType(aType);
 +    uml && uml->blockSignals(false);
  
-     QString indexa = qElement.attribute("indexa", "0");
-     QString indexb = qElement.attribute("indexb", "0");
+     QString indexa = qElement.attribute(QLatin1String("indexa"), QLatin1String("0"));
+     QString indexb = qElement.attribute(QLatin1String("indexb"), QLatin1String("0"));
