@@ -1,3 +1,2 @@
 version=3
 http://download.kde.org/stable/([\d.]+)/src/umbrello-([\d.]+).tar.xz
-ftp://ftp.kde.org/pub/kde/stable/([\d\.]*)/src/umbrello-([\d\.]*).tar.xz
