@@ -1,3 +1,9 @@
+umbrello (4:14.11.97-0ubuntu1~ubuntu15.04~ppa1) vivid; urgency=medium
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 01 Dec 2014 18:03:54 +0100
+
 umbrello (4:4.14.2-1) unstable; urgency=medium
 
   * New upstream release (4.14.2).
@@ -23,6 +29,50 @@ umbrello (4:4.13.3-1) unstable; urgency=medium
   * New patch: valgrind_errors (Closes: #610504)
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 25 Jul 2014 12:23:39 +0200
+
+umbrello (4:4.14.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+  *  Fix copyright to use GPL-KDEeV as short license. 
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 10 Oct 2014 06:55:48 -0700
+
+umbrello (4:4.14.1-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Mon, 22 Sep 2014 18:06:35 +0200
+
+umbrello (4:4.14.0-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 20 Aug 2014 13:48:45 +0200
+
+umbrello (4:4.13.97-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release RC
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Fri, 01 Aug 2014 17:44:21 +0200
+
+umbrello (4:4.13.95-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Wed, 30 Jul 2014 21:02:20 +0200
+
+umbrello (4:4.13.90-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Thu, 24 Jul 2014 23:54:52 +0200
+
+umbrello (4:4.13.2-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+  * Merge with Debian, no changes
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 17 Jun 2014 10:42:06 +0100
 
 umbrello (4:4.13.1-1) unstable; urgency=medium
 
@@ -76,3 +126,132 @@ umbrello (4:4.11.2-1) experimental; urgency=low
   * First release of kdesdk after being split by upstream.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 08 Oct 2013 10:58:24 +0200
+
+umbrello (4:4.13.0-0ubuntu2) UNRELEASED; urgency=medium
+
+  * Build against boost1.55.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Sat, 03 May 2014 22:15:52 +0100
+
+umbrello (4:4.13.0-0ubuntu1) trusty; urgency=medium
+
+  * New upstream KDE Software Compilation release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 10 Apr 2014 22:35:55 +0100
+
+umbrello (4:4.12.97-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Wed, 02 Apr 2014 12:04:32 +0200
+
+umbrello (4:4.12.95-0ubuntu1) trusty; urgency=medium
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sun, 23 Mar 2014 13:07:54 +0100
+
+umbrello (4:4.12.90-0ubuntu1) trusty; urgency=medium
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 19 Mar 2014 12:12:50 +0000
+
+umbrello (4:4.12.3-0ubuntu1) trusty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 04 Mar 2014 21:24:20 +0100
+
+umbrello (4:4.12.2-0ubuntu1) trusty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 05 Feb 2014 00:38:16 +0000
+
+umbrello (4:4.12.1-0ubuntu1) trusty; urgency=low
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 16 Jan 2014 08:52:26 +0000
+
+umbrello (4:4.12.0-0ubuntu1) trusty; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 18 Dec 2013 17:55:54 +0000
+
+umbrello (4:4.11.97-0ubuntu1) trusty; urgency=low
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 29 Nov 2013 13:54:20 +0000
+
+umbrello (4:4.11.95-0ubuntu1) trusty; urgency=low
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Mon, 25 Nov 2013 18:48:35 +0100
+
+umbrello (4:4.11.80-0ubuntu1) trusty; urgency=low
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sat, 23 Nov 2013 18:09:04 +0100
+
+umbrello (4:4.11.2-0ubuntu2) trusty; urgency=low
+
+  * Bump to Boost 1.54.
+
+ -- Dmitrijs Ledkovs <xnox@ubuntu.com>  Sat, 26 Oct 2013 22:26:43 +0100
+
+umbrello (4:4.11.2-0ubuntu1) saucy; urgency=low
+
+  * New upstream bugfix release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 30 Sep 2013 15:04:04 +0100
+
+umbrello (4:4.11.1-0ubuntu1) saucy; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Fri, 06 Sep 2013 22:47:31 +0100
+
+umbrello (4:4.11.0-0ubuntu1) saucy; urgency=low
+
+  [ Howard Chan ]
+  * New upstream release
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 14 Aug 2013 00:48:23 +0100
+
+umbrello (4:4.10.97-0ubuntu1) saucy; urgency=low
+
+  * New upstream RC 2 release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 26 Jul 2013 20:18:19 +0100
+
+umbrello (4:4.10.95-0ubuntu1) saucy; urgency=low
+
+  * New upstream RC release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 19 Jul 2013 12:33:46 +0000
+
+umbrello (4:4.10.90-0ubuntu1) saucy; urgency=low
+
+  [ Michał Zając ]
+  * New upstream bet release
+
+  [ Philip Muškovac ]
+  * Add file to umbrello.install
+
+ -- Michał Zając <quintasan@kubuntu.org>  Fri, 28 Jun 2013 18:38:00 +0100
+
+umbrello (4:4.10.80-0ubuntu1) saucy; urgency=low
+
+  * New upstream release
+  * Initial package, split from umbrello
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 21 Jun 2013 02:29:56 +0100

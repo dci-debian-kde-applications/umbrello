@@ -1,7 +1,7 @@
 Source: umbrello
 Section: kde
 Priority: optional
-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Sune Vuorela <sune@debian.org>,
            Fathi Boudra <fabo@debian.org>,
            Modestas Vainius <modax@debian.org>,
@@ -19,14 +19,14 @@ Build-Depends: cmake (>= 2.8),
 Standards-Version: 3.9.5
 XS-Testsuite: autopkgtest
 Homepage: http://www.kde.org/
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/umbrello.git
-Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/umbrello.git
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/kde-applications/umbrello.git/
+Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-applications/umbrello.git
 
 Package: umbrello
 Architecture: any
 Section: devel
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Suggests: khelpcenter4
+Suggests: khelpcenter
 Description: UML modelling tool and code generator
  Umbrello UML Modeller is a Unified Modelling Language diagram editor for KDE.
  It can create diagrams of software and other systems in the industry-standard
