@@ -11,3 +11,5 @@ usr/share/icons/hicolor/48x48/apps/umbrello.png
 usr/share/icons/hicolor/64x64/apps/umbrello.png
 usr/share/icons/hicolor/scalable/apps/umbrello.svgz
 usr/share/kde4/apps/umbrello/
+usr/bin/po2xmi
+usr/bin/xmi2pot
