@@ -1,8 +1,9 @@
-umbrello (4:14.11.97-0ubuntu1) UNRELEASED; urgency=medium
+umbrello (4:14.11.97-0ubuntu1~ubuntu15.04~ppa2) vivid; urgency=medium
 
   * New upstream RC release
+  * PPA build
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 01 Dec 2014 18:03:54 +0100
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 03 Dec 2014 18:18:27 +0100
 
 umbrello (4:4.14.2-1) unstable; urgency=medium
 
