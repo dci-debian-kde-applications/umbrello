@@ -7,7 +7,7 @@ umbrello (4:14.12.2-1~) UNRELEASED; urgency=medium
 umbrello (4:14.12.2-0ubuntu1) vivid; urgency=medium
 
   * New upstream release
-  * Remove unstable from watch file, uscan fails with 
+  * Remove unstable from watch file, uscan fails with
     remote site does not even have current version
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 10 Feb 2015 09:29:15 -0800
@@ -55,7 +55,7 @@ umbrello (4:4.13.3-1) unstable; urgency=medium
 umbrello (4:4.14.2-0ubuntu1) vivid; urgency=medium
 
   * New upstream release
-  *  Fix copyright to use GPL-KDEeV as short license. 
+  *  Fix copyright to use GPL-KDEeV as short license.
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 10 Oct 2014 06:55:48 -0700
 
