@@ -4,6 +4,12 @@ umbrello (4:14.12.3-1~) UNRELEASED; urgency=medium
 
  -- Maximiliano Curia <maxy@debian.org>  Thu, 26 Mar 2015 12:37:56 +0100
 
+umbrello (4:14.12.3-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 13 Mar 2015 14:26:19 -0700
+
 umbrello (4:14.12.2-1) experimental; urgency=medium
 
   * New upstream release (14.12.2).
