@@ -1,4 +1,4 @@
-umbrello (4:15.04.2-0ubuntu1) UNRELEASED; urgency=medium
+umbrello (4:15.04.2-0ubuntu1) wily; urgency=medium
 
   [ Scarlett Clark ]
   * New upstream release
@@ -10,7 +10,7 @@ umbrello (4:15.04.2-0ubuntu1) UNRELEASED; urgency=medium
     undocumented and upstream requests comments
     https://mail.kde.org/pipermail/umbrello-devel/2015-June/019594.html
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Sat, 06 Jun 2015 02:48:20 +0200
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 09 Jun 2015 22:46:15 +0200
 
 umbrello (4:14.12.3-0ubuntu1) vivid; urgency=medium
 
