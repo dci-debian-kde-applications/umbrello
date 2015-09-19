@@ -6,6 +6,7 @@ umbrello (4:15.08.1-1~) UNRELEASED; urgency=medium
   * New upstream release (15.04.3).
   * New upstream release (15.08.0).
   * New upstream release (15.08.1).
+  * Disable patch: valgrind_errors
 
  -- Maximiliano Curia <maxy@debian.org>  Thu, 17 Sep 2015 19:49:13 +0200
 
