@@ -8,6 +8,7 @@ umbrello (4:15.08.1-1~) UNRELEASED; urgency=medium
   * New upstream release (15.08.1).
   * Disable patch: valgrind_errors
   * New upstream patch: upstream_add_appstream_metadata.diff
+  * Update install files.
 
  -- Maximiliano Curia <maxy@debian.org>  Thu, 17 Sep 2015 19:49:13 +0200
 
