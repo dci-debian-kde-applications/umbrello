@@ -1,9 +1,9 @@
-umbrello (4:15.08.2-1~) UNRELEASED; urgency=medium
+umbrello (4:15.08.2-1) unstable; urgency=medium
 
   * New upstream release (15.08.2).
   * Remove upstream patch: upstream_add_appstream_metadata.diff
 
- -- Maximiliano Curia <maxy@debian.org>  Mon, 12 Oct 2015 15:24:51 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 16 Oct 2015 08:07:01 +0200
 
 umbrello (4:15.08.1-1) unstable; urgency=medium
 
