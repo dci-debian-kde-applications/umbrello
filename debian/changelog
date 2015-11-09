@@ -1,3 +1,9 @@
+umbrello (4:15.08.3-1~) UNRELEASED; urgency=medium
+
+  * New upstream release (15.08.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 09 Nov 2015 09:39:49 +0100
+
 umbrello (4:15.08.2-1) unstable; urgency=medium
 
   * New upstream release (15.08.2).
