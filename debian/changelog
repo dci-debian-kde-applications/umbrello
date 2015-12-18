@@ -1,6 +1,7 @@
 umbrello (4:15.12.0-1~) UNRELEASED; urgency=medium
 
   * New upstream release (15.12.0).
+  * New patch: fix_build.patch
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 16 Dec 2015 16:13:28 +0100
 
