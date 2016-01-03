@@ -3,7 +3,6 @@ usr/bin/umbrello
 usr/bin/xmi2pot
 usr/share/applications/kde4/umbrello.desktop
 usr/share/doc/kde/HTML/*/umbrello/*
-usr/share/icons/hicolor/*/apps/umbrello.png
 usr/share/icons/hicolor/*/mimetypes/application-x-uml.png
 usr/share/icons/hicolor/scalable/apps/umbrello.svgz
 usr/share/kde4/apps/umbrello/
