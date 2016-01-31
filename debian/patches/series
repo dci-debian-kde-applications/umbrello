@@ -1,2 +1,1 @@
 fix_build.patch
-QCOMPARE_uses_toString.patch
