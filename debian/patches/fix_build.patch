@@ -1,0 +1,25 @@
+Index: umbrello/umbrello/CMakeLists.txt
+===================================================================
+--- umbrello.orig/umbrello/CMakeLists.txt	2015-12-17 14:48:47.616579871 +0100
++++ umbrello/umbrello/CMakeLists.txt	2015-12-17 22:16:08.902597723 +0100
+@@ -544,7 +544,7 @@
+         ${CMAKE_CURRENT_SOURCE_DIR}/pics/global/hi128-apps-umbrello.png
+     )
+     add_executable(umbrello ${umbrello_SRCS})
+-    target_link_libraries(umbrello libumbrello)
++    target_link_libraries(umbrello libumbrello KF5::WindowSystem)
+ endif()
+ if(LIB_BUILD_MODE EQUAL SHARED)
+     install(TARGETS libumbrello ${INSTALL_TARGETS_DEFAULT_ARGS} )
+Index: umbrello/CMakeLists.txt
+===================================================================
+--- umbrello.orig/CMakeLists.txt	2015-12-17 22:44:43.119662787 +0100
++++ umbrello/CMakeLists.txt	2015-12-17 22:45:01.034920837 +0100
+@@ -141,6 +141,7 @@
+         KIO
+         TextEditor
+         WidgetsAddons
++        WindowSystem
+         XmlGui
+     )
+ 

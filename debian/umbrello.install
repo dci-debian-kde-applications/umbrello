@@ -1,6 +1,12 @@
 usr/bin/po2xmi
 usr/bin/umbrello
+usr/bin/po2xmi
 usr/bin/xmi2pot
-usr/share/applications/kde4/umbrello.desktop
-usr/share/doc/kde/HTML/*/umbrello/*
-usr/share/kde4/apps/umbrello/
+usr/share/applications/org.kde.umbrello.desktop
+usr/share/appdata/org.kde.umbrello.appdata.xml
+usr/share/kxmlgui5/umbrello/
+usr/share/umbrello/
+usr/share/icons/hicolor/*/actions/umbrello*
+usr/share/icons/hicolor/*/apps/umbrello.*
+usr/share/icons/hicolor/*/mimetypes/application-x-uml.png
+usr/share/doc/HTML/*/umbrello/
