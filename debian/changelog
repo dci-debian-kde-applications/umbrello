@@ -1,10 +1,10 @@
-umbrello (4:15.12.1-1ubuntu1) UNRELEASED; urgency=medium
+umbrello (4:15.12.1-1ubuntu1) xenial; urgency=medium
 
   * New upstream release
   * Wildcard icons in install file
   * Merged with Debian
 
- -- Clive Johnston <clivejo@aol.com>  Sun, 07 Feb 2016 14:59:08 +0000
+ -- Clive Johnston <clivejo@aol.com>  Wed, 09 Mar 2016 11:38:20 +0100
 
 umbrello (4:15.12.1-1) experimental; urgency=medium
 
