@@ -13,3 +13,7 @@ override_dh_auto_install:
 override_dh_auto_test:
 	# Disable dh_auto_test at build time
 	:
+
+override_dh_fixperms:
+	$(overridden_command) +Xusr/share/umbrello/headings/heading.rb
+
