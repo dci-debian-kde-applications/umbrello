@@ -1,3 +1,12 @@
+umbrello (4:15.12.3-1~1.gbp89a4d8) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @89a4d84306501ba5111fd52accbe7ea89524338e **
+
+  * Bump Standards-Version to 3.9.8
+  * Refresh patches
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Wed, 13 Apr 2016 11:37:13 +0200
+
 umbrello (4:15.12.1-1) experimental; urgency=medium
 
   * New upstream release (15.12.0).
