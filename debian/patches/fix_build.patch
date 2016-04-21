@@ -9,7 +9,7 @@ Subject: fix_build
  2 files changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 7743232..f24bd15 100644
+index 0489818..fb2795c 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -141,6 +141,7 @@ else()
@@ -21,10 +21,10 @@ index 7743232..f24bd15 100644
      )
  
 diff --git a/umbrello/CMakeLists.txt b/umbrello/CMakeLists.txt
-index 92b9b34..dffe251 100644
+index dd5806d..daee0fe 100644
 --- a/umbrello/CMakeLists.txt
 +++ b/umbrello/CMakeLists.txt
-@@ -544,7 +544,7 @@ else()
+@@ -545,7 +545,7 @@ else()
          ${CMAKE_CURRENT_SOURCE_DIR}/pics/global/hi128-apps-umbrello.png
      )
      add_executable(umbrello ${umbrello_SRCS})
