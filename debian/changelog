@@ -1,11 +1,19 @@
-umbrello (4:16.04.0-1~1.gbpc9c921) UNRELEASED; urgency=medium
+umbrello (4:16.04.0-1~2.gbp6531fa) UNRELEASED; urgency=medium
 
+  ** SNAPSHOT build @6531fa87dc4437c26df5af4f37cdfa51a5709c50 **
+
+  [ Automatic packaging ]
   ** SNAPSHOT build @c9c921b81674c9f6f726bfc8d4cd1d56a5c72229 **
 
   * Bump Standards-Version to 3.9.8
   * Refresh patches
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 21 Apr 2016 03:35:44 +0200
+  [ Maximiliano Curia ]
+  * New upstream release (15.12.2).
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+
+ -- Maximiliano Curia <maxy@gnuservers.com.ar>  Mon, 09 May 2016 13:35:19 +0200
 
 umbrello (4:15.12.1-1) experimental; urgency=medium
 
