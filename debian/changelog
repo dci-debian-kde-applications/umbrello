@@ -1,8 +1,11 @@
-umbrello (4:15.12.2-1~) UNRELEASED; urgency=medium
+umbrello (4:16.04.0-1~1.gbpc9c921) UNRELEASED; urgency=medium
 
-  * New upstream release (15.12.2).
+  ** SNAPSHOT build @c9c921b81674c9f6f726bfc8d4cd1d56a5c72229 **
 
- -- Maximiliano Curia <maxy@debian.org>  Sat, 13 Feb 2016 09:50:48 +0100
+  * Bump Standards-Version to 3.9.8
+  * Refresh patches
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 21 Apr 2016 03:35:44 +0200
 
 umbrello (4:15.12.1-1) experimental; urgency=medium
 

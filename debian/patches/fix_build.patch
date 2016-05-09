@@ -1,8 +1,30 @@
-Index: umbrello/umbrello/CMakeLists.txt
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 11:37:09 +0200
+Subject: fix_build
+
 ===================================================================
---- umbrello.orig/umbrello/CMakeLists.txt	2015-12-17 14:48:47.616579871 +0100
-+++ umbrello/umbrello/CMakeLists.txt	2015-12-17 22:16:08.902597723 +0100
-@@ -544,7 +544,7 @@
+---
+ CMakeLists.txt          | 1 +
+ umbrello/CMakeLists.txt | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 0489818..fb2795c 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -141,6 +141,7 @@ else()
+         KIO
+         TextEditor
+         WidgetsAddons
++        WindowSystem
+         XmlGui
+     )
+ 
+diff --git a/umbrello/CMakeLists.txt b/umbrello/CMakeLists.txt
+index dd5806d..daee0fe 100644
+--- a/umbrello/CMakeLists.txt
++++ b/umbrello/CMakeLists.txt
+@@ -545,7 +545,7 @@ else()
          ${CMAKE_CURRENT_SOURCE_DIR}/pics/global/hi128-apps-umbrello.png
      )
      add_executable(umbrello ${umbrello_SRCS})
@@ -11,15 +33,3 @@ Index: umbrello/umbrello/CMakeLists.txt
  endif()
  if(LIB_BUILD_MODE EQUAL SHARED)
      install(TARGETS libumbrello ${INSTALL_TARGETS_DEFAULT_ARGS} )
-Index: umbrello/CMakeLists.txt
-===================================================================
---- umbrello.orig/CMakeLists.txt	2015-12-17 22:44:43.119662787 +0100
-+++ umbrello/CMakeLists.txt	2015-12-17 22:45:01.034920837 +0100
-@@ -141,6 +141,7 @@
-         KIO
-         TextEditor
-         WidgetsAddons
-+        WindowSystem
-         XmlGui
-     )
- 
