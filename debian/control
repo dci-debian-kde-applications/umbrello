@@ -42,7 +42,7 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-kde/applications/umbrello.git
 Package: umbrello
 Architecture: any
 Section: devel
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, kinit
 Suggests: khelpcenter
 Description: UML modelling tool and code generator
  Umbrello UML Modeller is a Unified Modelling Language diagram editor for KDE.
