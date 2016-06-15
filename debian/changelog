@@ -1,11 +1,17 @@
-umbrello (4:16.04.1-2~1.gbp8b62e0) UNRELEASED; urgency=medium
+umbrello (4:16.04.2-1~1.gbp4040ed) UNRELEASED; urgency=medium
 
+  ** SNAPSHOT build @4040ed41be0f3aed177c35dc447ef6b4ee9e863b **
+
+  [ Maximiliano Curia ]
   ** SNAPSHOT build @8b62e028c3682dff56ae8851862edeffd55d63a0 **
 
   * Add missing runtime dependency (kinit)
     Thanks to Grégory DAVID for reporting (Closes: 801308)
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Sun, 05 Jun 2016 17:35:16 +0200
+  [ Automatic packaging ]
+  * Refresh patches
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Wed, 15 Jun 2016 03:35:30 +0200
 
 umbrello (4:16.04.1-1) unstable; urgency=medium
 
