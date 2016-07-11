@@ -1,1 +1,4 @@
-umbrello: script-not-executable usr/share/kde4/apps/umbrello/headings/heading.rb
+umbrello: binary-without-manpage usr/bin/po2xmi
+umbrello: binary-without-manpage usr/bin/xmi2pot
+umbrello: script-not-executable usr/share/umbrello/headings/heading.rb
+umbrello: manpage-has-errors-from-man usr/share/man/man1/umbrello.1.gz  can't find `DESC' file
