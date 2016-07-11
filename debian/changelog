@@ -1,14 +1,26 @@
-umbrello (4:16.04.1-0neon) xenial; urgency=medium
+umbrello (4:16.04.2-1) unstable; urgency=medium
 
-  * New release
+  [ Maximiliano Curia ]
+  * Add missing runtime dependency (kinit)
+    Thanks to Grégory DAVID for reporting (Closes: 801308)
 
- -- Neon CI <neon@kde.org>  Wed, 18 May 2016 18:43:54 +0200
+  [ Automatic packaging ]
+  * Refresh patches
 
-umbrello (4:15.12.2-1~) UNRELEASED; urgency=medium
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 23 Jun 2016 09:56:41 +0200
 
+umbrello (4:16.04.1-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Bump Standards-Version to 3.9.8
+  * Refresh patches
+
+  [ Maximiliano Curia ]
   * New upstream release (15.12.2).
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
 
- -- Maximiliano Curia <maxy@debian.org>  Sat, 13 Feb 2016 09:50:48 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 26 May 2016 18:27:35 +0200
 
 umbrello (4:15.12.1-1) experimental; urgency=medium
 
