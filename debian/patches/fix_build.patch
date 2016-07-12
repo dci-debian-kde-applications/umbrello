@@ -9,7 +9,7 @@ Subject: fix_build
  2 files changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 2362f4e..c43d41b 100644
+index 187f5dd..0b1341f 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -141,6 +141,7 @@ else()
