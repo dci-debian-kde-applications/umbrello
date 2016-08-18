@@ -1,10 +1,11 @@
-umbrello (4:16.04.3-1~1.gbpbec4fc) UNRELEASED; urgency=medium
+umbrello (4:16.08.0-1~1.gbpfc15ca) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @bec4fcd464eb374425bcab02b0325da866445f72 **
+  ** SNAPSHOT build @fc15ca58274f4a717a9bbf61c694bf3b6361bd75 **
 
   * Refresh patches
+  * Refresh patches
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Tue, 12 Jul 2016 21:35:26 +0200
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 18 Aug 2016 21:35:36 +0200
 
 umbrello (4:16.04.2-1) unstable; urgency=medium
 
