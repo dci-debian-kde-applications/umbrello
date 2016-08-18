@@ -9,10 +9,10 @@ Subject: fix_build
  2 files changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 187f5dd..0b1341f 100644
+index 389e273..4ea5cbb 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -141,6 +141,7 @@ else()
+@@ -152,6 +152,7 @@ else()
          KIO
          TextEditor
          WidgetsAddons
@@ -21,10 +21,10 @@ index 187f5dd..0b1341f 100644
      )
  
 diff --git a/umbrello/CMakeLists.txt b/umbrello/CMakeLists.txt
-index dd5806d..daee0fe 100644
+index 10cd5a3..a8c32ba 100644
 --- a/umbrello/CMakeLists.txt
 +++ b/umbrello/CMakeLists.txt
-@@ -545,7 +545,7 @@ else()
+@@ -552,7 +552,7 @@ else()
          ${CMAKE_CURRENT_SOURCE_DIR}/pics/global/hi128-apps-umbrello.png
      )
      add_executable(umbrello ${umbrello_SRCS})
