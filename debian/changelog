@@ -1,6 +1,6 @@
-umbrello (4:16.08.1-1~1.gbp5996bb) UNRELEASED; urgency=medium
+umbrello (4:16.08.2-1~1.gbp120f10) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @5996bbe3b0dc8e4d3178a817ffebc29bff716b3f **
+  ** SNAPSHOT build @120f105d222881eb105cadc25d30e72c2ef9c337 **
 
   [ Automatic packaging ]
   ** SNAPSHOT build @fc15ca58274f4a717a9bbf61c694bf3b6361bd75 **
@@ -9,11 +9,13 @@ umbrello (4:16.08.1-1~1.gbp5996bb) UNRELEASED; urgency=medium
   * Refresh patches
   * Update build-deps and deps with the info from cmake
   * Refresh patches
+  * Update build-deps and deps with the info from cmake
+  * Refresh patches
 
   [ Maximiliano Curia ]
   * Update install files
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Fri, 09 Sep 2016 13:59:27 +0200
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 13 Oct 2016 21:35:37 +0200
 
 umbrello (4:16.04.2-1) unstable; urgency=medium
 
