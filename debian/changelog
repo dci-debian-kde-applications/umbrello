@@ -1,21 +1,14 @@
-umbrello (4:16.08.2-1~1.gbp120f10) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @120f105d222881eb105cadc25d30e72c2ef9c337 **
+umbrello (4:16.08.2-1) unstable; urgency=medium
 
   [ Automatic packaging ]
-  ** SNAPSHOT build @fc15ca58274f4a717a9bbf61c694bf3b6361bd75 **
-
-  * Refresh patches
   * Refresh patches
   * Update build-deps and deps with the info from cmake
-  * Refresh patches
-  * Update build-deps and deps with the info from cmake
-  * Refresh patches
 
   [ Maximiliano Curia ]
+  * New upstream release (16.08.2)
   * Update install files
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 13 Oct 2016 21:35:37 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 18 Oct 2016 15:02:42 +0200
 
 umbrello (4:16.04.2-1) unstable; urgency=medium
 
