@@ -1,3 +1,11 @@
+umbrello (4:16.08.3-1~1.gbpc48960) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @c489607d841b54edd88eabfe24dfb6fdae2360c8 **
+
+  * Refresh patches
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 10 Nov 2016 21:35:44 +0100
+
 umbrello (4:16.08.2-1) unstable; urgency=medium
 
   [ Automatic packaging ]
