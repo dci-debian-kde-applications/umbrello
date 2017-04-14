@@ -45,6 +45,8 @@ Architecture: any
 Section: devel
 Depends: kinit, ${misc:Depends}, ${shlibs:Depends}
 Suggests: khelpcenter
+Breaks: ${kde-l10n:all}
+Replaces: ${kde-l10n:all}
 Description: UML modelling tool and code generator
  Umbrello UML Modeller is a Unified Modelling Language diagram editor for KDE.
  It can create diagrams of software and other systems in the industry-standard
