@@ -5,6 +5,5 @@ usr/share/applications/org.kde.umbrello5.desktop
 usr/share/doc/HTML/*/umbrello/
 usr/share/icons/hicolor/*/apps/umbrello.*
 usr/share/icons/hicolor/*/mimetypes/application-x-uml.png
-usr/share/locale/
 usr/share/metainfo/org.kde.umbrello.appdata.xml
 usr/share/umbrello/
