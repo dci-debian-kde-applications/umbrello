@@ -42,6 +42,7 @@ parts:
         - kdoctools-dev
         - libgit2-dev
         - libkf5kdelibs4support-dev
+        - libxslt1-dev
         - llvm-dev
         - pkg-config
         - libpulse0
