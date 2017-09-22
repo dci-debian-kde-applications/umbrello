@@ -41,6 +41,7 @@ parts:
         build-packages:
         - kdoctools-dev
         - libgit2-dev
+        - libkf5kdelibs4support-dev
         - pkg-config
         - libpulse0
         source: https://download.kde.org/stable/applications/17.08.1/src/umbrello-17.08.1.tar.xz
