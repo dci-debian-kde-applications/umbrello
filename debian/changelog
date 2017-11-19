@@ -1,11 +1,14 @@
-umbrello (4:17.08.1-2~) UNRELEASED; urgency=medium
+umbrello (4:17.08.3-0r1) UNRELEASED; urgency=medium
 
-  * New revision
+  [ Maximiliano Curia ]
   * Bump kde-l10n breaks/replaces versions.
     Thanks to Andreas Beckmann for the report (Closes: 875783)
   * Update uploaders list as requested by MIA team (Closes: #879445)
 
- -- Maximiliano Curia <maxy@debian.org>  Tue, 31 Oct 2017 18:04:21 +0100
+  [ Pino Toscano ]
+  * New upstream release.
+
+ -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 31 Oct 2017 18:04:21 +0100
 
 umbrello (4:17.08.1-1) experimental; urgency=medium
 
