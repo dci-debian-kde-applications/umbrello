@@ -9,6 +9,8 @@ umbrello (4:17.08.3-0r1) UNRELEASED; urgency=medium
   * New upstream release.
   * Drop unused debian/meta/cmake-ignore file.
   * Bump Standards-Version to 4.1.1, no changes required.
+  * Adjust l10npkgs_firstversion_ok to the version where kde-l10n will drop
+    translations.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 31 Oct 2017 18:04:21 +0100
 
