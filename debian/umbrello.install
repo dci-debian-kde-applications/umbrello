@@ -1,7 +1,7 @@
 usr/bin/po2xmi5
 usr/bin/umbrello5
 usr/bin/xmi2pot5
-usr/share/applications/org.kde.umbrello5.desktop
+usr/share/applications/org.kde.umbrello.desktop
 usr/share/doc/HTML/*/umbrello/
 usr/share/icons/hicolor/*/apps/umbrello.*
 usr/share/icons/hicolor/*/mimetypes/application-x-uml.png
