@@ -1,0 +1,54 @@
+---
+name: umbrello
+version: 17.08.1
+summary: UML modelling tool and code generator
+description: |-
+    Umbrello UML Modeller is a Unified Modelling Language diagram editor for KDE.
+    It can create diagrams of software and other systems in the industry-standard
+    UML format, and can also generate code from UML diagrams in a variety of
+    programming languages.
+confinement: strict
+grade: stable
+apps:
+    umbrello:
+        command: kf5-launch umbrello
+        plugs:
+        - kde-frameworks-5-plug
+        - home
+        - x11
+        - opengl
+        - network
+        - network-bind
+        - unity7
+        - pulseaudio
+slots:
+    session-dbus-interface:
+        interface: dbus
+        name: org.kde.umbrello
+        bus: session
+plugs:
+    kde-frameworks-5-plug:
+        content: kde-frameworks-5-all
+        interface: content
+        default-provider: kde-frameworks-5
+        target: kf5
+parts:
+    umbrello:
+        after:
+        - kde-frameworks-5-dev
+        - kde-frameworks-5-env
+        plugin: cmake
+        build-packages:
+        - kdoctools-dev
+        - libkf5kdelibs4support-dev
+        - libxslt1-dev
+        - libxml2-dev
+        - libboost-dev
+        source: https://download.kde.org/stable/applications/17.08.1/src/umbrello-17.08.1.tar.xz
+        configflags:
+        - "-DKDE_INSTALL_USE_QT_SYS_PATHS=ON"
+        - "-DCMAKE_INSTALL_PREFIX=/usr"
+        - "-DCMAKE_BUILD_TYPE=Release"
+        - "-DENABLE_TESTING=OFF"
+        - "-DBUILD_TESTING=OFF"
+        - "-DKDE_SKIP_TEST_SETTINGS=ON"
